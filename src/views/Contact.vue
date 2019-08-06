@@ -1,14 +1,15 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+    <h1>Contact</h1>
 </template>
 
 <script>
 export default {
-    name: 'about',
+    name: 'contact',
     components: {
 
     }
 }
 </script>
+
+<style lang="css" scoped>
+</style>
