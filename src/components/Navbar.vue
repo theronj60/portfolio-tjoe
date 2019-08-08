@@ -1,19 +1,58 @@
 <template>
-<div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/skills">Skills</router-link> |
-    <router-link to="/projects">Projects</router-link> |
-    <router-link to="/contact">Contact</router-link>
-</div>
+  <div id="nav">
+      <v-navigation-drawer
+      v-model="drawerRight"
+      app
+      dark
+      clipped
+      right
+      width="150"
+    >
+      <v-list dense>
+        <v-list-item>
+          <v-list-item-content>
+              <v-flex 12>
+                  <NavBtns />
+              </v-flex>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-app-bar
+      app
+      dense
+      dark
+      clipped-right
+    >
+      
+
+      <v-toolbar-title>Page title</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+        <div class="hidden-sm-and-down">
+            <NavBtns />
+        </div>
+        
+      
+      <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawerRight = !drawerRight"></v-app-bar-nav-icon>
+    </v-app-bar>
+
+    
+  </div>
 </template>
 
 <script>
+import NavBtns from '@/components/NavBtns.vue';
+
 export default {
     name: 'navbar',
-    components: {
-        
-    }
+    components:{
+        NavBtns
+    },
+    data: () => ({
+      drawerRight: false,
+    }),
 }
 </script>
 

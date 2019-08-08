@@ -1,7 +1,12 @@
 <template>
-<div class="home">
-    <h1>Home page</h1>
-</div>
+<v-content class="home">
+    <v-container fluid>
+        <div>
+            <h1>Home page</h1>
+        </div>
+    </v-container>
+</v-content>
+
 </template>
 
 <script>
@@ -14,3 +19,8 @@ export default {
     }
 }
 </script>
+
+<style lang="css" scoped>
+
+</style>
+
