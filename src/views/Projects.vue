@@ -17,5 +17,9 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style>
+  .projects {
+    background-image: url('../assets/step-4.jpg');
+    background-size: cover;
+  }
 </style>

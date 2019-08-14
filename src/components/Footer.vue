@@ -6,12 +6,11 @@
       tile
       app
     >
-      <v-flex
-        xs12
-      >
+      
         {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        <v-spacer></v-spacer>
         <Social />
-      </v-flex>
+     
       
     </v-footer>
 </template>

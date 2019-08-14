@@ -17,9 +17,10 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style>
   .about {
-    background-color: transparent;
+    background-image: url('../assets/step-2.jpg');
+    background-size: cover;
   }
 </style>
 
