@@ -25,17 +25,21 @@
       dark
       clipped-right
     >
-      
-
-      <v-toolbar-title>Page title</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-        <div class="hidden-sm-and-down">
-            <NavBtns />
-        </div>
         
+       
+          <v-toolbar-title>Page title</v-toolbar-title>
+
+          <v-spacer></v-spacer>
+          <div class="hidden-sm-and-down">
+              <NavBtns />
+          </div>
+        
+          <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawerRight = !drawerRight"></v-app-bar-nav-icon>
+        
+        
+
+   
       
-      <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawerRight = !drawerRight"></v-app-bar-nav-icon>
     </v-app-bar>
 
     

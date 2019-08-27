@@ -5,6 +5,8 @@
         max-width="1366"
         width="100%"
         class="mx-auto fill-height"
+        id="v-home"
+        dark
         >
             <v-card-title>I'm a title</v-card-title>
             <v-card-text>I'm card text</v-card-text>
@@ -29,9 +31,13 @@ export default {
 </script>
 
 <style>
+    #v-home {
+        background-color: rgba(0,0,0, 0.6);
+    }
     .home {
         background-image: url('../assets/step-1.jpg');
         background-size: cover;
+        color: white;
     }
 
 </style>

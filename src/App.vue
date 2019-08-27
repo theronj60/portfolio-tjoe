@@ -2,7 +2,7 @@
 <div id="app">
     <v-app>
         <Navbar />
-        <transition name="view">
+        <transition name="view" mode="out-in" enter-active-class="animated fadeInRight" leave-active-class="animated fadeOutLeft">
             <router-view /> 
         </transition>
                       
@@ -25,32 +25,23 @@ export default {
 </script>
 
 <style>
-    .view-enter-active, .view-leave-active {
-        transition: opacity 0.8s ease-in-out, transform 0.5s ease;
-    }
-    .view-enter-active {
-        transition-delay: 0.8s;
-        
-    }
-    .view-enter {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css";
 
-    .view-enter-to {
-        opacity: 1;
-        transform: translateX(0px);
+    .fadeInRight {
+        -webkit-animation-name: fadeInRight;
+        animation-name: fadeInRight;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s;
+        animation-delay: .2s;
+        transition-duration: .2s;
     }
-
-    .view-leave {
-        opacity: 1;
-        transform: translateX(0px);
+    .fadeOutLeft {
+        -webkit-animation-name: fadeOutLeft;
+        animation-name: fadeOutLeft;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s;
     }
-    .view-leave-to {
-        opacity: 0;
-        transform: translateX(100px);
-
-    }
+    
     
 
 </style>
