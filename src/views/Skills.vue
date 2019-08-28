@@ -5,7 +5,7 @@
         max-width="1366"
         width="100%"
         class="mx-auto fill-height"
-        id="v-home"
+        id="v-background"
         dark
         >
             <v-card-title>I'm a title</v-card-title>

@@ -5,14 +5,16 @@
         max-width="1366"
         width="100%"
         class="mx-auto fill-height"
-        id="v-home"
+        id="v-background"
         dark
         >
-            <v-card-title>I'm a title</v-card-title>
-            <v-card-text>I'm card text</v-card-text>
-            <v-card-actions>
-                <v-btn text>Click</v-btn>
-            </v-card-actions>
+            
+            <v-row>
+                <v-col>
+                    <h1 class="text-center">testing</h1>
+                </v-col>
+            </v-row>
+
          </v-card>
     </v-container>
 </v-content>
@@ -31,8 +33,9 @@ export default {
 </script>
 
 <style>
-    #v-home {
+    #v-background {
         background-color: rgba(0,0,0, 0.6);
+        /* display: flex; */
     }
     .home {
         background-image: url('../assets/step-1.jpg');
