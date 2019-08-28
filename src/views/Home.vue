@@ -10,7 +10,7 @@
         >
             
             <v-row>
-                <v-col>
+                <v-col class="align-self-center">
                     <h1 class="text-center">testing</h1>
                 </v-col>
             </v-row>
@@ -41,6 +41,9 @@ export default {
         background-image: url('../assets/step-1.jpg');
         background-size: cover;
         color: white;
+    }
+    .home .row {
+        height: 100%;
     }
 
 </style>
