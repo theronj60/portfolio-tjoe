@@ -2,7 +2,7 @@ module.exports = {
   presets: [
     '@vue/app'
   ],
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/portfolio-tjoe/'
-    : '/'
+  // publicPath: process.env.NODE_ENV === 'production'
+  //   ? '/portfolio-tjoe/'
+  //   : '/'
 }
