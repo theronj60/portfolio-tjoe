@@ -2,10 +2,11 @@
 <div id="app">
     <v-app>
         <Navbar />
+        
         <transition name="view" mode="out-in" enter-active-class="animated fadeInRight" leave-active-class="animated fadeOutLeft">
             <router-view /> 
         </transition>
-                      
+
         <Footer />
     </v-app>
 </div>
