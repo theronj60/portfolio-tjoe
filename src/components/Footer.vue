@@ -10,7 +10,6 @@
         {{ new Date().getFullYear() }} — <strong>Theron Joe</strong>
         <v-spacer></v-spacer>
         <Social />
-     
       
     </v-footer>
 </template>
