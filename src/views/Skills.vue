@@ -10,7 +10,7 @@
             >
                 <template>
                     <v-sheet
-                        class="mx-auto"
+                        class="mx-auto align-center"
                         elevation="8"
                         max-width="800"
                     >

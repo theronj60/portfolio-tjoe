@@ -10,8 +10,11 @@
         >
             
             <v-row>
-                <v-col class="align-self-center">
-                    <h1 class="text-center">testing</h1>
+                <v-col cols="9" class="pl-10 align-self-end">
+                    <h1 class="text-left">Hello</h1>
+                </v-col>
+                <v-col cols="5" class="pl-12 align-self-start">
+                    <h2 class="text-left">My Name is Theron Joe</h2>
                 </v-col>
             </v-row>
 
