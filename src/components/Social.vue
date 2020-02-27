@@ -2,30 +2,53 @@
 
     <v-layout justify-space-around>
 
-    <v-icon large color="green darken-2">mdi-facebook-box</v-icon>
+    <v-btn
+        v-for="(social, i) in socials"
+        :key="i"
+        :color="social.color"
+        class="white--text"
+        fab
+        icon
+        small
+    >
+        <a class="links" :href="social.url"><v-icon :color="social.color">{{ social.icon }}</v-icon></a>
+    </v-btn>
 
-    <v-icon large color="blue darken-2">mdi-instagram</v-icon>
-
-    <v-icon large color="purple darken-2">mdi-linkedin-box</v-icon>
-
-    <v-icon large color="teal darken-2">mdi-github-box</v-icon>
-
-    <v-icon large color="blue-grey darken-2">mdi-email</v-icon>
-
-    <!-- <v-icon large color="blue-grey darken-2">mdi-codepen</v-icon>
-
-    <v-icon large color="blue-grey darken-2">mdi-behance</v-icon> -->
-
-  </v-layout>
+    </v-layout>
 
 </template>
 
 <script>
 export default {
-    
+    data: () => ({
+        socials: [
+            {
+                icon: 'mdi-facebook-box',
+                color: 'blue darken-4',
+                url: 'https://www.facebook.com/sociallyawkwardgamer'
+            },
+            {
+                icon: 'mdi-instagram',
+                color: 'purple accent-3',
+                url: 'https://www.instagram.com/dkjoe60/'
+            },
+            {
+                icon: 'mdi-linkedin-box',
+                color: 'blue lighten-1',
+                url: 'https://www.linkedin.com/in/theron-joe-1681b6139/'
+            },
+            {
+                icon: 'mdi-github-box',
+                color: 'grey darken-5',
+                url: 'https://github.com/theronj60'
+            },
+        ]
+    })
 }
 </script>
 
 <style>
-
+    .links {
+        text-decoration: none;
+    }
 </style>

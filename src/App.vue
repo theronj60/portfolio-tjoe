@@ -3,9 +3,9 @@
     <v-app>
         <Navbar />
         
-        <transition name="view" mode="out-in" enter-active-class="animated fadeInRight" leave-active-class="animated fadeOutLeft">
+        <!-- <transition name="view" mode="out-in" enter-active-class="animated fadeInRight" leave-active-class="animated fadeOutLeft"> -->
             <router-view /> 
-        </transition>
+        <!-- </transition> -->
 
         <Footer />
     </v-app>
