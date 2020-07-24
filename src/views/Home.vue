@@ -1,6 +1,7 @@
 <template>
-<div>Home Page</div>
-
+  <div class="bg-gray-400">
+    Testing
+  </div>
 </template>
 
 <script>

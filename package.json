@@ -9,7 +9,9 @@
         "start": "heroku static:deploy"
     },
     "dependencies": {
+        "autoprefixer": "^9.8.5",
         "core-js": "^2.6.11",
+        "postcss-cli": "^7.1.1",
         "vue": "^2.6.11",
         "vue-router": "^3.3.4"
     },
@@ -22,6 +24,7 @@
         "eslint-plugin-vue": "^5.0.0",
         "sass": "^1.26.10",
         "sass-loader": "^7.3.1",
+        "tailwindcss": "^1.5.2",
         "vue-cli-plugin-vuetify": "^0.6.3",
         "vue-template-compiler": "^2.6.11"
     },
@@ -37,11 +40,6 @@
         "rules": {},
         "parserOptions": {
             "parser": "babel-eslint"
-        }
-    },
-    "postcss": {
-        "plugins": {
-            "autoprefixer": {}
         }
     },
     "browserslist": [
