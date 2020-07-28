@@ -1,8 +1,10 @@
 <template>
-  <div>
-    Footer Here
-    {{ new Date().getFullYear() }} — <strong>Theron Joe</strong>
-  </div>    
+  <footer>
+    <div>
+      Footer Here
+      {{ new Date().getFullYear() }} — <strong>Theron Joe</strong>
+    </div>   
+  </footer>   
 </template>
 
 <script>
