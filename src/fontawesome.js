@@ -1,13 +1,14 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
-import { faFontAwesome } from '@fortawesome/free-brands-svg-icons'
-import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
+import { faInstagramSquare } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
 
 export default function fontIcons() {
-  library.add(faFontAwesome)
+  library.add(faLinkedin,faTwitterSquare)
 
-  library.add(faUserSecret)
+  library.add(faInstagramSquare)
 
-  library.add(faFacebookSquare)
+  library.add(faGithubSquare)
 }
 
