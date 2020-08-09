@@ -1,6 +1,7 @@
 <template>
+
   <footer>
-    <ul class=" flex justify-center">
+    <ul class="flex justify-center">
       <li class="my-2 mx-5">
         <a href="#" class="hover:underline text-gray-600 hover:text-gray-900"><font-awesome-icon :icon="['fab', 'github-square']" size="2x"/></a>
       </li>

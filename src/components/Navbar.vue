@@ -1,9 +1,11 @@
 <template>
-  <header class="sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+  <header class="sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 sm:mx-5">
   
     <div class="flex items-center justify-between px-4 py-3 sm:p-0">
-      <div>
-        <img src="#" alt="profile picture">
+      <div class="w-full text-center">
+        <strong class="sm:m-0 ml-6 text-xl font-semibold">
+          Theron Joe
+        </strong>
       </div>
       <div class="sm:hidden">
         <button @click="open = !open" type="button" class="block text-gray-900 hover:text-gray-400 focus:text-gray-400 focus:outline-none">
