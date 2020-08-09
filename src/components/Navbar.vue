@@ -3,7 +3,7 @@
   
     <div class="flex items-center justify-between px-4 py-3 sm:p-0">
       <div>
-        <img src="#" alt="resturant logo">
+        <img src="#" alt="profile picture">
       </div>
       <div class="sm:hidden">
         <button @click="open = !open" type="button" class="block text-gray-900 hover:text-gray-400 focus:text-gray-400 focus:outline-none">
